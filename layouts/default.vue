@@ -20,12 +20,18 @@
     v-app-bar(app clipped-left)
       v-app-bar-nav-icon( @click="showNavigation = !showNavigation")
       v-spacer
-      v-dialog( transition="dialog-top-transition" max-width="600")
+      v-dialog( transition="dialog-top-transition" max-width="600" :fullscreen="fullScreen")
         template( v-slot:activator="{ on, attrs }")
-          v-text-field( readonly prepend-inner-icon="mdi-briefcase-search-outline" label="חיפוש חופשי" solo class="mt-7" v-on="on" v-bind="attrs" )
+          v-text-field( readonly prepend-inner-icon="mdi-briefcase-search-outline" label="חיפוש חופשי" solo class="mt-7" v-on="on" v-bind="attrs" type="search"  )
         template( v-slot:default="dialog")
           v-toolbar( color="success")
-            v-toolbar-title חיפוש חופשי  {{on}}
+            v-toolbar-title חיפוש חופשי
+            v-spacer
+            v-btn-toggle
+              v-btn(@click="fullScreen = !fullScreen" icon)
+                v-icon(v-text="fullScreen? 'mdi-fullscreen-exit' :'mdi-fullscreen'")
+              v-btn(@click="dialog.value = false" icon)
+                v-icon mdi-close
           search
       v-spacer
       v-avatar logo be here
@@ -43,6 +49,7 @@ export default {
   data () {
     return {
       showNavigation: null,
+      fullScreen: false,
       articles: [
         {
           name: 'דף הבית',

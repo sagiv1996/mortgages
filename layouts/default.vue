@@ -17,10 +17,10 @@
             v-list-item-avatar( v-text="child.name[0]" color="#FF8A65" size="30"  )
             v-list-item-content( two-line)
               v-list-item-subtitle {{child.name}}
-    v-app-bar(app clipped-left)
+    v-app-bar(app clipped-left src="logo-text.png" shrink-on-scroll  fade-img-on-scroll)
       v-app-bar-nav-icon( @click="showNavigation = !showNavigation")
       v-spacer
-      v-dialog( transition="dialog-top-transition" max-width="600" :fullscreen="fullScreen")
+      v-dialog( transition="dialog-top-transition" max-width="600" :fullscreen="fullScreen" )
         template( v-slot:activator="{ on, attrs }")
           v-text-field( readonly prepend-inner-icon="mdi-briefcase-search-outline" label="חיפוש חופשי" solo class="mt-7" v-on="on" v-bind="attrs" type="search"  )
         template( v-slot:default="dialog")
@@ -34,7 +34,6 @@
                 v-icon mdi-close
           search
       v-spacer
-      v-avatar logo be here
     v-main
       v-container()
         nuxt

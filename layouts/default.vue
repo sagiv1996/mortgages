@@ -17,7 +17,7 @@
             v-list-item-avatar( v-text="child.name[0]" color="#FF8A65" size="30"  )
             v-list-item-content( two-line)
               v-list-item-subtitle {{child.name}}
-    v-app-bar(app )
+    v-app-bar(app elevate-on-scroll )
       v-app-bar-nav-icon( @click="showNavigation = !showNavigation")
       v-spacer
       v-dialog( transition="dialog-top-transition" max-width="600" :fullscreen="fullScreen" )
@@ -41,8 +41,8 @@
         nuxt
         v-btn( fixed left bottom icon x-large fab)
           v-icon( color="success" x-large  ) mdi-whatsapp
-    v-footer(app inset absolute )
-      v-sheet this is the footer text
+    v-footer(app inset absolute height="100"  )
+        v-img( src="logo-text.png" width="100vw" contain max-height="100"  )
 </template>
 
 <script>

@@ -1,8 +1,8 @@
 <template lang="pug">
-  v-row
+  v-row(justify="center" )
     v-col( cols="12")
       v-parallax( src="index.jpeg" height="700" )
-    v-col( v-for="article in lastArticle" :key="article.slug")
+    v-col( v-for="article in lastArticle" :key="article.slug" cols="12" sm="11" md="6" lg="4")
       card-article( :article="article")
     v-col( cols="12")
       v-expansion-panels( focusable popout )

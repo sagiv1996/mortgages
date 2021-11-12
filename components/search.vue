@@ -23,7 +23,7 @@ export default {
   methods: {
     async search (val) {
       if (val && val.length > 2) {
-        this.results = await this.$content('', { deep: true }).only(['slug', 'title', 'description', 'image', 'path']).search(val).fetch()
+        this.results = await this.$content('articles', { deep: true }).only(['slug', 'title', 'description', 'image', 'path']).search(val).fetch()
       } else {
         this.results = null
       }

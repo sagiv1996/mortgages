@@ -17,7 +17,7 @@
 <script>
 export default {
   async asyncData ({ $content, params }) {
-    const article = await $content(`/${params.articleType}/${params.articleId}`).fetch()
+    const article = await $content(`/articles/${params.articleType}/${params.articleId}`).fetch()
     return { article }
   }
 }

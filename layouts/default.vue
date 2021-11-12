@@ -17,7 +17,7 @@
             v-list-item-avatar( v-text="child.name[0]" color="#FF8A65" size="30"  )
             v-list-item-content( two-line)
               v-list-item-subtitle {{child.name}}
-    v-app-bar(app clipped-left src="logo-text.png" shrink-on-scroll  fade-img-on-scroll)
+    v-app-bar(app )
       v-app-bar-nav-icon( @click="showNavigation = !showNavigation")
       v-spacer
       v-dialog( transition="dialog-top-transition" max-width="600" :fullscreen="fullScreen" )
@@ -34,8 +34,10 @@
                 v-icon mdi-close
           search
       v-spacer
+      v-avatar
+        v-img(:src="$icon(512)" alt="לוגו צב משכנתאות")
     v-main
-      v-container()
+      v-container( )
         nuxt
         v-btn( fixed left bottom icon x-large fab)
           v-icon( color="success" x-large  ) mdi-whatsapp
@@ -58,7 +60,7 @@ export default {
         {
           name: 'מחשבון משכנתא',
           icon: 'mdi-script-text-outline',
-          action: 'calculator',
+          action: 'articles/calculator',
           items: [
             {
               name: 'מה זה מחשבון משכנתא',
@@ -85,7 +87,7 @@ export default {
         {
           name: 'מחשבונים',
           icon: 'mdi-calculator-variant',
-          action: 'articles',
+          action: 'articles/articles',
           items: [
             {
               name: 'מחשבונים'

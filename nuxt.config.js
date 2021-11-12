@@ -48,9 +48,6 @@ export default {
   pwa: {
     manifest: {
       lang: 'he'
-    },
-    icon: {
-      fileName: 'i.png'
     }
   },
 

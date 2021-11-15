@@ -1,3 +1,4 @@
+
 export default {
   // Target: https://go.nuxtjs.dev/config-target
   target: 'static',
@@ -54,6 +55,28 @@ export default {
   // Content module configuration: https://go.nuxtjs.dev/config-content
   content: {},
 
+  hooks: {
+    'content:file:beforeInsert': (document) => {
+      if (document.extension === '.md') {
+        const { minutes } = require('reading-time')(document.text)
+        document.readingTime = `${Math.round(minutes)} דקות קריאה`
+        const dir = document.dir.split('/').pop()
+        if (dir) {
+          const data = {
+            calculator: {
+              icon: 'mdi-calculator-variant',
+              name: 'מחשבון'
+            },
+            test2: {
+              icon: 'mdi-code-not-equal',
+              name: 'בדיקה 2'
+            }
+          }
+          Object.assign(document, { dirHebrew: data[dir].name ? data[dir].name : '', dirIcon: data[dir].icon })
+        }
+      }
+    }
+  },
   // Vuetify module configuration: https://go.nuxtjs.dev/config-vuetify
   vuetify: {
     rtl: true

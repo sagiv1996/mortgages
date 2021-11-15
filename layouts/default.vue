@@ -2,21 +2,22 @@
   v-app
     v-navigation-drawer(app right v-model="showNavigation" bottom)
       template(v-for="item in articles" )
-        v-list-item(v-if="!item.items" eager :key="item.name" nuxt :to='`/${item.action}`')
+        div( :key="item.name")
+        v-list-item(v-if="!item.childs" eager :key="item.name" nuxt :to='`${item.action}`')
           v-list-item-icon
             v-icon( v-text="item.icon")
           v-list-item-content
               v-list-item-title {{item.name}}
-        v-list-group(v-else-if="item.items" eager :group="item.action" active-class="deep-orange lighten-1" :key="item.name")
+        v-list-group(v-else-if="item.childs && item.childs.length> 0" eager :group="item.dir" active-class="deep-orange lighten-1" :key="item.name")
           template(v-slot:activator)
             v-list-item-icon
               v-icon( v-text="item.icon")
             v-list-item-content
               v-list-item-title {{item.name}}
-          v-list-item(v-for="child in item.items" :key="child.name" nuxt :to='`/${item.action}/${child.action}`')
-            v-list-item-avatar( v-text="child.name[0]" color="#FF8A65" size="30"  )
+          v-list-item( v-for="child in item.childs" :key="child.name" nuxt :to='`${child.path}/`')
+            v-list-item-avatar( v-text="child.title[0]" color="#FF8A65" size="30"  )
             v-list-item-content( two-line)
-              v-list-item-subtitle {{child.name}}
+              v-list-item-subtitle {{child.title}}
     v-app-bar(app elevate-on-scroll )
       v-app-bar-nav-icon( @click="showNavigation = !showNavigation")
       v-spacer
@@ -47,6 +48,20 @@
 
 <script>
 export default {
+  async fetch () {
+    const data = await this.$content('/articles', { deep: true }).only(['path', 'title', 'dir', 'slug', 'dirHebrew', 'dirIcon']).fetch()
+    const result = data.reduce(function (r, a) {
+      r[a.dir] = r[a.dir] || []
+      r[a.dir].push(a)
+      return r
+    }, Object.create(null))
+    console.log(result)
+    Object.keys(result).forEach((key) => {
+      if (result[key]) {
+        this.articles.push({ name: result[key][0].dirHebrew, dir: result[key][0].dir, icon: result[key][0].dirIcon, childs: result[key] })
+      }
+    })
+  },
   data () {
     return {
       showNavigation: null,
@@ -55,47 +70,7 @@ export default {
         {
           name: 'דף הבית',
           icon: 'mdi-home',
-          action: ''
-        },
-        {
-          name: 'מחשבון משכנתא',
-          icon: 'mdi-script-text-outline',
-          action: 'articles/calculator',
-          items: [
-            {
-              name: 'מה זה מחשבון משכנתא',
-              action: 'what-is-this'
-            },
-            {
-              name: 'איך משתמשים במחשבון משכנתא',
-              action: 'how-to-use'
-            },
-            {
-              name: 'מה זה שפיצר וקרן שווה',
-              action: 'spitzer'
-            },
-            {
-              name: 'מה ההבדל בין תמהיל לריבית',
-              action: 'mix-versus-interest'
-            },
-            {
-              name: 'מה זה תמהיל ולמה זה חשוב',
-              action: 'when-use-mix'
-            }
-          ]
-        },
-        {
-          name: 'מחשבונים',
-          icon: 'mdi-calculator-variant',
-          action: 'articles/articles',
-          items: [
-            {
-              name: 'מחשבונים'
-            },
-            {
-              name: 'סרטון הדרכה על מחשבונים'
-            }
-          ]
+          action: '/'
         }
       ]
     }

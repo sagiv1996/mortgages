@@ -18,7 +18,7 @@
                 v-card-actions
             v-col(cols="12" v-if="article.tags")
                 v-chip-group( column )
-                    v-chip( v-for="tag in article.tags" :key="tag") {{tag}}
+                    v-chip( v-for="tag in article.tags" :key="tag" :to="`/tag/${tag}`" nuxt) {{tag}}
 </template>
 <script>
 export default {

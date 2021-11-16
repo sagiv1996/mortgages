@@ -16,6 +16,11 @@ export default {
     const lastArticle = await $content('/articles', { deep: true }).only(['path', 'title', 'image', 'description', 'createdAt', 'slug']).limit(10).sortBy('createdAt', 'desc').fetch()
     const questions = await $content('').only(['answer', 'question']).fetch()
     return { lastArticle, questions }
+  },
+  head () {
+    return {
+      title: 'דף הבית'
+    }
   }
 }
 </script>

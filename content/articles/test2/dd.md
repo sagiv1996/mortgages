@@ -2,6 +2,19 @@
 title: בדיקה?
 description: בלה בלה בלה זה תקציר של העמוד הראשון. מה דעתך??בלה בלה בלה זה תקציר של העמוד הראשון. מה דעתך??בלה בלה בלה זה תקציר של העמוד הראשון. מה דעתך??בלה בלה בלה זה תקציר של העמוד הראשון. מה דעתך??בלה בלה בלה זה תקציר של העמוד הראשון. מה דעתך??בלה בלה בלה זה תקציר של העמוד הראשון. מה דעתךגהראשון. מה דעתך??
 image: veeterzy-sMQiL_2v4vs-unsplash.jpg
+tags:
+  - tag1
+  - tag2
+  - tag2
+  - tag3
+  - tag4
+  - tag5
+  - tag6
+  - tag7
+  - tag8
+  - tag9
+  - tag10
+  - tag11
 ---
 ## title1
 It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).

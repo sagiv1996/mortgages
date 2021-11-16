@@ -16,12 +16,27 @@
                 v-card-text.align-center.justify-center.text-center
                     nuxt-content(:document="article")
                 v-card-actions
+            v-col(cols="12" v-if="article.tags")
+                v-chip-group( column )
+                    v-chip( v-for="tag in article.tags" :key="tag") {{tag}}
 </template>
 <script>
 export default {
   async asyncData ({ $content, params }) {
     const article = await $content(`/articles/${params.articleType}/${params.articleId}`).fetch()
     return { article }
+  },
+  head () {
+    return {
+      title: this.article.title,
+      meta: [
+        {
+          hid: this.article.description,
+          name: this.article.description,
+          content: this.article.description
+        }
+      ]
+    }
   }
 }
 </script>

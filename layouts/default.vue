@@ -43,7 +43,7 @@
         v-btn( fixed left bottom icon x-large fab)
           v-icon( color="success" x-large  ) mdi-whatsapp
     v-footer(app inset absolute height="100"  )
-        v-img( src="logo-text.png" width="100vw" contain max-height="100"  )
+        v-img( src="logo-text.png" width="100vw" contain max-height="100" eager  )
 </template>
 
 <script>

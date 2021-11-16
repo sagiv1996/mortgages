@@ -1,5 +1,5 @@
 <template lang="pug">
-    v-card()
+    v-card( hover)
         v-card-title {{article.title}}
         v-card-subtitle
             ago-time( :agoTime="article.createdAt")

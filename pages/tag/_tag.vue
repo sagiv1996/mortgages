@@ -9,12 +9,12 @@
 <script>
 export default {
   async asyncData ({ $content, params }) {
-    const lastArticle = await $content('/articles', { deep: true }).only(['path', 'title', 'image', 'description', 'createdAt', 'slug']).where({ tags: { $contains: [params.tag] } }).sortBy('createdAt', 'desc').fetch()
+    const lastArticle = await $content('/articles', { deep: true }).only(['path', 'title', 'image', 'description', 'createdAt', 'slug']).where({ tags: { $contains: [params.tag.replace('-', ' ')] } }).sortBy('createdAt', 'desc').fetch()
     return { lastArticle }
   },
   head () {
     return {
-      title: 'תג - ' + this.$route.params.tag
+      title: 'תג - ' + this.$route.params.tag.replace('-', ' ')
     }
   }
 }

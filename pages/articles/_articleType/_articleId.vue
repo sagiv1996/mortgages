@@ -16,15 +16,20 @@
                 v-card-text.align-center.justify-center.text-center
                     nuxt-content(:document="article")
                 v-card-actions
-            v-col(cols="12" v-if="article.tags")
-                v-chip-group( column )
-                    v-chip( v-for="tag in article.tags" :key="tag" :to="`/tag/${tag.replace(' ', '-')}`" nuxt) {{tag}}
+                  v-col(cols="12" v-if="article.tags")
+                      v-chip-group( column )
+                          v-chip( v-for="tag in article.tags" :key="tag" :to="`/tag/${tag.replace(' ', '-')}`" nuxt) {{tag}}
+                v-card-actions
+                  v-btn( v-if="prev" :to="prev.path" nuxt outlined rounded depressed) {{prev.title}}
+                  v-spacer
+                  v-btn( v-if="next" :to="next.path" nuxt outlined rounded depressed ) {{next.title}}
 </template>
 <script>
 export default {
   async asyncData ({ $content, params }) {
     const article = await $content(`/articles/${params.articleType}/${params.articleId}`).fetch()
-    return { article }
+    const [prev, next] = await $content(`articles/${params.articleType}`, { deep: true }).only(['path', 'title']).surround(params.articleId).fetch()
+    return { article, prev, next }
   },
   head () {
     return {

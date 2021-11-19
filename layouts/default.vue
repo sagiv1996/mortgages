@@ -55,7 +55,6 @@ export default {
       r[a.dir].push(a)
       return r
     }, Object.create(null))
-    console.log(result)
     Object.keys(result).forEach((key) => {
       if (result[key]) {
         this.articles.push({ name: result[key][0].dirHebrew, dir: result[key][0].dir, icon: result[key][0].dirIcon, childs: result[key] })

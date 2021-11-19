@@ -39,7 +39,7 @@ export default {
   },
   methods: {
     async fetchData () {
-      const articles = await this.$content(this.url, { deep: this.deep }).only(this.only).limit(this.skip).sortBy('createdAt', 'desc').skip(this.articles.length).where().fetch()
+      const articles = await this.$content(this.url, { deep: this.deep }).only(this.only).limit(this.skip).sortBy('createdAt', 'desc').skip(this.articles.length).where(this.where).fetch()
       articles.forEach((article) => {
         this.articles.push(article)
       })

@@ -1,5 +1,5 @@
 <template lang="pug">
-    v-card( hover v-intersect="listenScroll? onIntersect: false")
+    v-card( hover)
         v-card-title {{article.title}}
         v-card-subtitle
             ago-time( :agoTime="article.createdAt")
@@ -18,17 +18,6 @@ export default {
     length: {
       type: Number,
       default: 500
-    },
-    listenScroll: {
-      type: Boolean,
-      default: false
-    }
-  },
-  methods: {
-    onIntersect (entries, observer, isIntersecting) {
-      if (isIntersecting) {
-        this.$emit('endPage')
-      }
     }
   }
 }

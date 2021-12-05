@@ -1,28 +1,15 @@
 ---
-title: בדיקה? q k k 
-description: בלה בלה בלה זה תקציר של העמוד הראשון. מה דעתך??בלה בלה בלה זה תקציר של העמוד הראשון. מה דעתך??בלה בלה בלה זה תקציר של העמוד הראשון. מה דעתך??בלה בלה בלה זה תקציר של העמוד הראשון. מה דעתך??בלה בלה בלה זה תקציר של העמוד הראשון. מה דעתך??בלה בלה בלה זה תקציר של העמוד הראשון. מה דעתךגהראשון. מה דעתך??
+title: מה זה מחsdfsdfsdfdsfsdfdsfשבון משכנתא?
+description: בלה בלה בלה זה תקציר של העמוד הראשון. מה דעתך??בלה בלה בלה זה תקציר של העמוד הראשון. מה דעתך??בלה בלה בלה זה תקציר של העמוד הראשון. מה דעתך??בלה בלה בלה זה תקציר של העמוד הראשון. מה דעתך??בלה בלה בלה זה תקציר של העמוד הראשון. מה דעתך??בלה בלה בלה זה תקציר של העמוד הראשון. מה דעתך??בלה בלה בלה זה תקציר של העמוד הראשון. מה דעתך??בלה בלה בלה זה תקציר של העמוד הראשון. מה דעתך??בלה בלה בלה זה תקציר של העמוד הראשון. מה דעתך??בלה בלה בלה זה תקציר של העמוד הראשון. מה דעתך??בלה בלה בלה זה תקציר של העמוד הראשון. מה דעתך??בלה בלה בלה זה תקציר של העמוד הראשון. מה דעתך??
 image: veeterzy-sMQiL_2v4vs-unsplash.jpg
-createdAt: 2021-11-18 16:30
+createdAt: 2021-11-10 20:22
 tags:
   - tag1
   - tag2
   - tag2
-  - tag3
-  - tag4
-  - tag5
-  - tag6
-  - tag7
-  - tag8
-  - tag9
-  - tag10
-  - tag11
-  - תגית בעברית
 ---
 ## title1
-p1 
-p2
-p3
-p4
+It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
 ### title2 lore
 Contrary to popular belief, Lorem Ipsum isa not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
 

@@ -1,0 +1,38 @@
+---
+title: animals
+description:  Animals (also called Metazoa) are multicellular, eukaryotic organisms in the biological kingdom Animalia. With few exceptions, animals consume organic material, breathe oxygen, are able to move, can reproduce sexually, and go through an ontogenetic stage in which their body consists of a hollow sphere of cells, the blastula, during embryonic development. Over 1.5 million living animal species have been described—of which around 1 million are insects—but it has been estimated there are over 7 million animal species in total. Animals range in length from 8.5 micrometres (0.00033 in) to 33.6 metres (110 ft). They have complex interactions with each other and their environments, forming intricate food webs. The scientific study of animals is known as zoology. Most living animal species are in Bilateria, a clade whose members have a bilaterally symmetric body plan. The Bilateria include the protostomes, containing invertebrates such as nematodes, arthropods, and molluscs, and the deuterostomes, containing the echinoderms and the chordates, the latter including the vertebrates. Life forms interpreted as early animals were present in the Ediacaran biota of the late Precambrian. Many modern animal phyla became clearly established in the fossil record as marine species during the Cambrian explosion, which began around 542 million years ago. 6,331 groups of genes common to all living animals have been identified; these may have arisen from a single common ancestor that lived 650 million years ago.
+image: animal.jpg
+createdAt: 2019-14-12 22:20
+tags:
+  - cat
+  - animal
+  - dog
+---
+# Etymology and naming
+Animals (also called Metazoa) are multicellular, eukaryotic organisms in the biological kingdom Animalia. With few exceptions, animals consume organic material, breathe oxygen, are able to move, can reproduce sexually, and go through an ontogenetic stage in which their body consists of a hollow sphere of cells, the blastula, during embryonic development. Over 1.5 million living animal species have been described—of which around 1 million are insects—but it has been estimated there are over 7 million animal species in total. Animals range in length from 8.5 micrometres (0.00033 in) to 33.6 metres (110 ft). They have complex interactions with each other and their environments, forming intricate food webs. The scientific study of animals is known as zoology.
+
+Most living animal species are in Bilateria, a clade whose members have a bilaterally symmetric body plan. The Bilateria include the protostomes, containing invertebrates such as nematodes, arthropods, and molluscs, and the deuterostomes, containing the echinoderms and the chordates, the latter including the vertebrates. Life forms interpreted as early animals were present in the Ediacaran biota of the late Precambrian. Many modern animal phyla became clearly established in the fossil record as marine species during the Cambrian explosion, which began around 542 million years ago. 6,331 groups of genes common to all living animals have been identified; these may have arisen from a single common ancestor that lived 650 million years ago. 
+
+## Etymology
+The word animal comes from the Latin animalis, meaning 'having breath', 'having soul' or 'living being'.[1] The biological definition includes all members of the kingdom Animalia.[2] In colloquial usage, the term animal is often used to refer only to nonhuman animals.[3][4][5][6] 
+
+## Characteristics
+Animals have several characteristics that set them apart from other living things. Animals are eukaryotic and multicellular.[7][8] Unlike plants and algae, which produce their own nutrients[9] animals are heterotrophic,[8][10] feeding on organic material and digesting it internally.[11] With very few exceptions, animals respire aerobically.[12] All animals are motile[13] (able to spontaneously move their bodies) during at least part of their life cycle, but some animals, such as sponges, corals, mussels, and barnacles, later become sessile. The blastula is a stage in embryonic development that is unique to animals,[14] (though it has been lost in some) allowing cells to be differentiated into specialised tissues and organs. 
+
+### Structure
+All animals are composed of cells, surrounded by a characteristic extracellular matrix composed of collagen and elastic glycoproteins.[15] During development, the animal extracellular matrix forms a relatively flexible framework upon which cells can move about and be reorganised, making the formation of complex structures possible. This may be calcified, forming structures such as shells, bones, and spicules.[16] In contrast, the cells of other multicellular organisms (primarily algae, plants, and fungi) are held in place by cell walls, and so develop by progressive growth.[17] Animal cells uniquely possess the cell junctions called tight junctions, gap junctions, and desmosomes.[18]
+
+With few exceptions—in particular, the sponges and placozoans—animal bodies are differentiated into tissues.[19] These include muscles, which enable locomotion, and nerve tissues, which transmit signals and coordinate the body. Typically, there is also an internal digestive chamber with either one opening (in Ctenophora, Cnidaria, and flatworms) or two openings (in most bilaterians).[20] 
+
+### Reproduction and development
+See also: Sexual reproduction § Animals, and Asexual reproduction § Examples in animals
+
+Nearly all animals make use of some form of sexual reproduction.[21] They produce haploid gametes by meiosis; the smaller, motile gametes are spermatozoa and the larger, non-motile gametes are ova.[22] These fuse to form zygotes,[23] which develop via mitosis into a hollow sphere, called a blastula. In sponges, blastula larvae swim to a new location, attach to the seabed, and develop into a new sponge.[24] In most other groups, the blastula undergoes more complicated rearrangement.[25] It first invaginates to form a gastrula with a digestive chamber and two separate germ layers, an external ectoderm and an internal endoderm.[26] In most cases, a third germ layer, the mesoderm, also develops between them.[27] These germ layers then differentiate to form tissues and organs.[28]
+
+Repeated instances of mating with a close relative during sexual reproduction generally leads to inbreeding depression within a population due to the increased prevalence of harmful recessive traits.[29][30] Animals have evolved numerous mechanisms for avoiding close inbreeding.[31]
+
+Some animals are capable of asexual reproduction, which often results in a genetic clone of the parent. This may take place through fragmentation; budding, such as in Hydra and other cnidarians; or parthenogenesis, where fertile eggs are produced without mating, such as in aphids.[32][33]
+
+
+## Numbers and habitats
+The following table lists estimated numbers of described extant species for the animal groups with the largest numbers of species,[60] along with their principal habitats (terrestrial, fresh water,[61] and marine),[62] and free-living or parasitic ways of life.[63] Species estimates shown here are based on numbers described scientifically; much larger estimates have been calculated based on various means of prediction, and these can vary wildly. For instance, around 25,000–27,000 species of nematodes have been described, while published estimates of the total number of nematode species include 10,000–20,000; 500,000; 10 million; and 100 million.[64] Using patterns within the taxonomic hierarchy, the total number of animal species—including those not yet described—was calculated to be about 7.77 million in 2011.[65][66][a]

@@ -70,6 +70,10 @@ export default {
             test2: {
               icon: 'mdi-code-not-equal',
               name: 'בדיקה 2'
+            },
+            animal: {
+              icon: 'mdi-unicorn',
+              name: 'חיות'
             }
           }
           Object.assign(document, { dirHebrew: data[dir].name ? data[dir].name : '', dirIcon: data[dir].icon })

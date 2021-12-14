@@ -33,7 +33,7 @@
                 v-icon(v-text="fullScreen? 'mdi-fullscreen-exit' :'mdi-fullscreen'")
               v-btn(@click="dialog.value = false" icon)
                 v-icon mdi-close
-          search
+          search( @navigator="dialog.value = false" )
       v-spacer
       v-avatar
         v-img(:src="$icon(512)" alt="לוגו צב משכנתאות")
